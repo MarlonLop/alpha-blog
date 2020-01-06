@@ -59,6 +59,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   #postgreSQL
-  gem 'pg'
+  gem 'pg', '~> 0.18.4'
 
 end

@@ -1,1 +1,60 @@
+//$navbar-default-bg: #007bff;
+
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: $blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset_url('jumbotron_denver.jpeg');
+  background-size: cover;
+  margin-top: 1%;
+  //height: 550px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #aeaeae;
+  color: #777
+}
+
+footer a:hover {
+  colo: #222;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+

@@ -3,99 +3,12 @@
 <head>
   <title>My page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-  <style>
-    /* Style the header */
-    header {
-      background-color: #666;
-      padding: 30px;
-      text-align: center;
-      font-size: 35px;
-      color: white;
-    }
-
-    /* Style the footer */
-    footer {
-      background-color: #777;
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-
-
-    /* Create two equal columns that sits next to each other */
-    .column {
-      -webkit-column-count: 2; /* Chrome, Safari, Opera */
-      -moz-column-count: 3; /* Firefox */
-      column-count: 2;
-      flex: 50%;
-      -webkit-column-rule: 1px solid #000000;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      background-color: #111;
-    }
-
-
-  </style>
-
 </head>
 
 <body>
-
-<ul>
-  <li><%= link_to 'Blog', articles_path %> </li>
-  <li> <%= link_to 'About', about_path %> </li>
-</ul>
-
-<header>
-  <h1 style="text-align:center;font-size:4vw;color:#000000;">My Page</h1>
-</header>
-
-<!--<div>-->
-  <%#= image_tag 'banner.jpeg' %>
-<!--</div>-->
-
-<hr>
-
-<div class="column">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <b>eiusmod tempor</b>
-    incididunt ut labore et dolore magna aliqua. Faucibus turpis in eu mi bibendum neque egestas congue quisque.
-    Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor.Neque volutpat ac tincidunt vitae
-    semper quis. Nisl pretium fusce id velit ut tortor pretium viverra. Tincidunt augue interdum velit euismod in
-    pellentesque. Feugiat in ante metus dictum at tempor. Erat pellentesque adipiscing commodo elit.
-    Congue mauris rhoncus aenean vel elit scelerisque. Purus faucibus ornare suspendisse sed nisi lacus sed.
-    <br>
-    Lorem <b>ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-    et dolore magna aliqua. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Amet nisl suscipit
-    adipiscing bibendum est ultricies integer quis auctor. Neque volutpat ac tincidunt vitae semper quis. Nisl
-    pretium fusce id velit ut tortor pretium viverra. Tincidunt augue interdum velit euismod in pellentesque.
-    Feugiat in ante metus dictum at tempor. <i>Erat pellentesque adipiscing commodo elit.</i>
-    Congue mauris rhoncus aenean vel elit scelerisque. Purus faucibus ornare suspendisse sed nisi lacus sed.
-  </p>
-</div>
-
-<footer>My footer</footer>
-
+  <div class="center jumbotron">
+    <h1>BLOG</h1>
+    <%= link_to "Sign up now", "#", class: "btn btn-primary btn-xlarge" %>
+  </div>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<%= render 'shared/errors', obj: @user %>
+
+<div class="row">
+  <div class="col-sm-12">
+    <%= form_for @user do |i| %>
+      <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+          <%= i.label :username %>
+        </div>
+        <div class="col-sm-8">
+          <%= i.text_field :username, class: "form-control", placeholder: "Enter username", autofocus: true %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+          <%= i.label :email %>
+        </div>
+        <div class="col-sm-8">
+          <%= i.email_field :email,  placeholder: "Enter email", class: "form-control" %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2 col-form-label">
+          <%= i.label :password %>
+        </div>
+        <div class="col-sm-8">
+          <%= i.password_field :password, class: "form-control", placeholder: "Enter password" %>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-2">
+          <%= i.submit(@user.new_record? ? "Sign up" : "Save changes", class: "btn btn-primary btn-md") %>
+        </div>
+      </div>
+    <% end %>
+    <div class="col-sm-4 offset-sm-4">
+      <%= link_to "[ Cancel and return ]", articles_path %>
+    </div>
+  </div>
+</div>

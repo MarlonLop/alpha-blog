@@ -16,7 +16,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap4', '~> 0.2.2'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sassc', '~> 2.2', '>= 2.2.1'
 gem 'sass-rails', '~> 5.0'
